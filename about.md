@@ -3,7 +3,7 @@ layout: default
 title: About Me
 ---
 
-# About Abhi Verma
+# About Abhishek Verma
 
 ## Professional Background
 
