@@ -23,7 +23,7 @@
         <nav class="navbar">
             <a href="index.html" class="logo" style="--i: 1;">&lt;Port<span>folio</span>/&gt;</a>
 
-            <ul>
+            <ul class="nav-links" id="navLinks">
                 <li style="--i: 2;"><a href="#home" class="active">Home</a></li>
                 <li style="--i: 3;"><a href="#about">About</a></li>
                 <li style="--i: 4;"><a href="#skills">Skills</a></li>
@@ -34,6 +34,10 @@
             </ul>
 
             <a href="Abhishek_Verma_CV.pdf" download class="cvbtn" style="--i: 8;">Download CV <i class="fa-solid fa-download"></i></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
@@ -277,7 +281,7 @@
                         </div>
                     </div>
                     <h3 class="project-title">Cloud Security Hardening</h3>
-                    <p class="project-desc">Configured AWS Inspector, Security Hub, GuardDuty, and WAF to establish robust security protocols for EKS workloads and cloud infrastructure. Safeguarded applications against threats across multi-account AWS environments.</p>
+                    <p class="project-desc">Configured AWS Inspector,AWS Firewall, Security Hub, GuardDuty, and WAF to establish robust security protocols for EKS workloads and cloud infrastructure. Safeguarded applications against threats across multi-account AWS environments.</p>
                     <div class="project-footer">
                         <span class="project-company"><i class="fa-solid fa-building"></i> Innoitus (Taylor &amp; Francis)</span>
                         <a href="https://github.com/abhiverma001" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fa-brands fa-github"></i> View</a>
