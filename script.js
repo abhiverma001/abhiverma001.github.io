@@ -1,18 +1,13 @@
 // Typed Text
 document.addEventListener('DOMContentLoaded', () => {
     const typed = new Typed('.typing-text', {
-        strings: ['Frontend Developer', 'Web Developer', 'Youtuber'],
+        strings: ['Senior Cloud Engineer', 'AWS Cloud Architect', 'Kubernetes Expert', 'Terraform Specialist', 'CI/CD Automation Engineer'],
         typeSpeed: 70,
-        backSpeed: 70,
-        backDelay: 1000,
+        backSpeed: 50,
+        backDelay: 1500,
         loop: true,
     });
 });
-
-
-
-
-
 
     document.addEventListener("DOMContentLoaded", function () {
         const aboutSection = document.querySelector(".about");

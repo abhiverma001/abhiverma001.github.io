@@ -301,3 +301,269 @@ section {
     color: var(--light-text-clr);
     font-size: 1.1rem;
 }
+
+
+/* Service / Skill Cards */
+.service-card {
+    background: var(--second-dark-clr);
+    border-radius: 12px;
+    border: 1px solid rgba(15, 187, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(15, 187, 255, 0.25);
+    border-color: var(--global-clr);
+}
+
+.service-icon {
+    font-size: 2.8rem;
+    color: var(--global-clr);
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-clr);
+    margin-bottom: 0.75rem;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: var(--light-text-clr);
+    line-height: 1.6;
+}
+
+.cert-issuer {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--global-clr);
+    font-weight: 500;
+}
+
+
+/* Work Experience Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--global-clr), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 2.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.35rem;
+    top: 0.4rem;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--global-clr);
+    box-shadow: 0 0 10px var(--global-clr);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--global-clr);
+    background: rgba(15, 187, 255, 0.1);
+    border: 1px solid rgba(15, 187, 255, 0.3);
+    border-radius: 20px;
+    padding: 0.2rem 0.9rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.timeline-content {
+    background: var(--second-dark-clr);
+    border: 1px solid rgba(15, 187, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: rgba(15, 187, 255, 0.35);
+    box-shadow: 0 0 15px rgba(15, 187, 255, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-clr);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content h4 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--light-text-clr);
+    margin-bottom: 0.6rem;
+}
+
+.client-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--btn-clr);
+    border: 1px solid var(--btn-clr);
+    border-radius: 20px;
+    padding: 0.15rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+    margin: 0.75rem 0 0 0;
+    padding-left: 1.2rem;
+}
+
+.timeline-content ul li {
+    color: var(--light-text-clr);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0.4rem;
+}
+
+.timeline-content ul li strong {
+    color: var(--text-clr);
+}
+
+
+/* Project Cards */
+.project-card {
+    background: var(--second-dark-clr);
+    border: 1px solid rgba(15, 187, 255, 0.15);
+    border-radius: 14px;
+    padding: 1.6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(15, 187, 255, 0.18);
+    border-color: var(--global-clr);
+}
+
+.project-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-icon {
+    font-size: 2rem;
+    color: var(--global-clr);
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--global-clr);
+    background: rgba(15, 187, 255, 0.1);
+    border: 1px solid rgba(15, 187, 255, 0.3);
+    border-radius: 20px;
+    padding: 0.15rem 0.65rem;
+    letter-spacing: 0.3px;
+}
+
+.project-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-clr);
+    margin: 0;
+}
+
+.project-desc {
+    font-size: 0.97rem;
+    color: var(--light-text-clr);
+    line-height: 1.65;
+    flex: 1;
+    margin: 0;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.project-company {
+    font-size: 0.85rem;
+    color: var(--light-text-clr);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.project-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--global-clr);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: opacity 0.2s;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    opacity: 0.75;
+}
+
+
+/* Footer */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact Form Placeholder Text */
+.form-control::placeholder {
+    color: #7a9ab5;
+    opacity: 1;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    background-color: #1a2f42 !important;
+    color: #fff !important;
+    box-shadow: 0 0 0 2px rgba(15, 187, 255, 0.35);
+    border-color: var(--global-clr) !important;
+}
